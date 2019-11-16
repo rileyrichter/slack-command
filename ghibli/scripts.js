@@ -19,15 +19,15 @@ request.onload = function () {
     data.forEach(status => {
       const card = document.createElement('div');
       card.setAttribute('class', 'card');
-    
+
       const h1 = document.createElement('h1');
       h1.textContent = status.site;
 
-      const p = document.createElement('p');
+      const l = document.createElement('p');
       status.name = status.site.substring(0, 300);
       p.textContent = `${status.name}...`;
 
-      const p = document.createElement('p');
+      const m = document.createElement('p');
       status.name = status.site.substring(0, 300);
       p.textContent = `${status.interface}...`;
 
