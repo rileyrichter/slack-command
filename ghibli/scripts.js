@@ -34,7 +34,7 @@ request.onload = function () {
   } else {
     const errorMessage = document.createElement('marquee');
     errorMessage.textContent = `Gah, it's not working!`;
-    app.appendChild(errorMessage);
+    app.appendChild(errorMessage); 
   }
 }
 
