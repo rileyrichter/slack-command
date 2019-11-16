@@ -14,14 +14,14 @@ request.open('GET', 'https://webflow-node-api.herokuapp.com/status', true);
 request.onload = function () {
 
   // Begin accessing JSON data here
-  var data = JSON.parse(this.response);   
+  var data = JSON.parse(this.response);
   if (request.status >= 200 && request.status < 400) {
     data.forEach(status => {
       const card = document.createElement('div');
       card.setAttribute('class', 'card');
 
       const h1 = document.createElement('h1');
-      h1.textContent = status.name;
+      h1.textContent = status.site;
 
       const p = document.createElement('p');
       status.name = status.site.substring(0, 300);
