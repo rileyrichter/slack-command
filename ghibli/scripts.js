@@ -25,6 +25,14 @@ request.onload = function () {
 
       const p = document.createElement('p');
       status.name = status.site.substring(0, 300);
+      p.textContent = `${status.name}...`;
+
+      const p = document.createElement('p');
+      status.name = status.site.substring(0, 300);
+      p.textContent = `${status.interface}...`;
+
+      const p = document.createElement('p');
+      status.name = status.site.substring(0, 300);
       p.textContent = `${status.publish}...`;
 
       container.appendChild(card);
