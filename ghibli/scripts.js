@@ -23,21 +23,23 @@ request.onload = function () {
       const h1 = document.createElement('h1');
       h1.textContent = status.site;
 
-      const l = document.createElement('p');
-      status.name = status.site.substring(0, 300);
-      p.textContent = `${status.name}...`;
-  
-      const m = document.createElement('p');
-      status.name = status.site.substring(0, 300);
-      p.textContent = `${status.interface}...`;
-
       const p = document.createElement('p');
       status.name = status.site.substring(0, 300);
       p.textContent = `${status.publish}...`;
 
+      const l = document.createElement('p');
+      status.name = status.site.substring(0, 300);
+      l.textContent = `${status.name}...`;
+
+      const m = document.createElement('p');
+      status.name = status.site.substring(0, 300);
+      m.textContent = `${status.interface}...`;
+
       container.appendChild(card);
       card.appendChild(h1);
       card.appendChild(p);
+      card.appendChild(l);
+      card.appendChild(m);
     });
   } else {
     const errorMessage = document.createElement('marquee');
