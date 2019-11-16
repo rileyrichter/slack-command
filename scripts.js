@@ -2,7 +2,7 @@
 var request = new XMLHttpRequest()
 
 // Open a new connection, using the GET request on the URL endpoint
-request.open('GET', 'https://webflow-node-api.herokuapp.com/status', true)
+request.open('GET', 'https://ghibliapi.herokuapp.com/films', true)
 
 request.onload = function() {
   // Begin accessing JSON data here
@@ -11,10 +11,9 @@ request.onload = function() {
 // Send request
 request.send()
 
-// Begin accessing JSON data here
 var data = JSON.parse(this.response)
 
-data.forEach(id => {
+data.forEach(movie => {
   // Log each movie's title
-  console.log(id.site)
+  console.log(movie.title)
 })
