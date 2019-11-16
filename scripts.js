@@ -8,7 +8,7 @@ request.onload = function() {
   // Begin accessing JSON data here
 }
 
-// Send request
+// Send request test
 request.send()
 
 var data = JSON.parse(this.response)
