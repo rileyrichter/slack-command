@@ -26,7 +26,7 @@ request.onload = function () {
       const l = document.createElement('p');
       status.name = status.site.substring(0, 300);
       p.textContent = `${status.name}...`;
-
+  
       const m = document.createElement('p');
       status.name = status.site.substring(0, 300);
       p.textContent = `${status.interface}...`;
