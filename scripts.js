@@ -14,7 +14,7 @@ request.send()
 // Begin accessing JSON data here
 var data = JSON.parse(this.response)
 
-data.forEach(id => {
+data.forEach(status => {
   // Log each movie's title
-  console.log(id.name)
+  console.log(status.name)
 })
