@@ -24,7 +24,7 @@ request.onload = function () {
       h1.textContent = status.name;
 
       const p = document.createElement('p');
-      movie.description = status.site.substring(0, 300);
+      status.name = status.site.substring(0, 300);
       p.textContent = `${status.publish}...`;
 
       container.appendChild(card);
@@ -37,5 +37,5 @@ request.onload = function () {
     app.appendChild(errorMessage);
   }
 }
-   
+
 request.send();
